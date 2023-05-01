@@ -4,9 +4,10 @@ import os
 import time
 
 interval = 1  # 帧间隔
-path = "./*.mp4"
-W = 75
-H = 42
+path = "./op.mp4" # 视频地址
+W = 75 # 宽
+H = 42 # 高
+
 # 根据灰度对应字符列表
 ascii_char = list("$@B%8&WM#*ZO0QLCJUYXhkwmxzvaunocr/\\|()1{}[]?Ili+!;:-_,\"^`'.  ") 
 # 打开视频
