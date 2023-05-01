@@ -5,14 +5,14 @@ Play a video in console。
 需要安装python或C++版本的opencv
 <br>
 需要修改以下内容
-##python
+### python
 ```python
 interval = 1  # 帧间隔
 path = "./op.mp4" # 地址
 W = 75 # 宽
 H = 42 # 高
 ```
-##C++
+### C++
 ```C++
 #define FPS_INTERVAL 1//帧间隔
 #define W 75//宽
