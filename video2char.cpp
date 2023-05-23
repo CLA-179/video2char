@@ -68,11 +68,11 @@ int main(){
             }
             text[k] = '\0';
             k = 0;
-            SetConsoleCursorPosition(hOutput, coord);//使光标位于(0,0)代替CLS，避免闪屏
+            SetConsoleCursorPosition(hOutput, coord);//使光标位于(0,0)
             // system("cls");
             cout << text;
             ReadConsoleOutputCharacterA(hOutput, data, W * (H * 2 + 1) + 1, coord, &bytes);
-            WriteConsoleOutputCharacterA(hOutBuf, data, W * (H * 2 + 1) + 1, coord, &bytes);
+            WriteConsoleOutputCharacterA(hOutBuf, data, W * (H * 2 + 1) + 1, coord, &bytes);//双缓冲技术
             clock_t t2 = clock();
             sleepTime = perFpsTime - (t2 - t1);
             // cout << "\n" << timeSleep - (t2 - t1) << "\t" << (t2 - t1) ;
